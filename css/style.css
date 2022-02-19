@@ -13,6 +13,8 @@
   --borders-line: #ececec;
   --border-line-img: #eeeeee;
   --card-set-get: 30px;
+  --img-overlay-color: rgba(47, 48, 58, 0.4);
+  --hero-bg-color: #c4c4c4;
 }
 
 /*   reset  */
@@ -50,6 +52,16 @@ img {
 }
 .link {
   text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 /*  header  */
@@ -212,6 +224,21 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--light-black-color);
+}
+
+.background {
+  min-height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--hero-bg-color);
+  background-image: linear-gradient(
+      var(--img-overlay-color),
+      var(--img-overlay-color)
+    ),
+    url("../images/background-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* publicity */
