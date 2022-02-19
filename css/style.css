@@ -15,6 +15,7 @@
   --card-set-get: 30px;
   --img-overlay-color: rgba(47, 48, 58, 0.4);
   --hero-bg-color: #c4c4c4;
+  --border-klient-color: rgba(175, 177, 184, 1);
 }
 
 /*   reset  */
@@ -299,6 +300,7 @@ img {
 /* team */
 
 .works-title,
+.klients-title,
 .team-title {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -483,4 +485,23 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+}
+.klients-list {
+  display: flex;
+}
+.btn-klient {
+  display: flex;
+  border: 1px solid var(--border-klient-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+  background-color: var(--button-portfolio-fill);
+  color: var(--black-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+.btn-klient:not(:last-child) {
+  margin-left: 30px;
 }
