@@ -355,12 +355,24 @@ img {
   line-height: 1.19;
   text-align: center;
 }
+.team-contacts {
+  display: flex;
+}
 
 .team-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 16px;
+}
+
+.team-contact {
+  display: flex;
+}
+
+.team-contact:not(:last-child) {
+  margin-right: 16px;
 }
 
 /* footer */
@@ -488,20 +500,61 @@ img {
 }
 .klients-list {
   display: flex;
+  margin-left: -30px;
 }
-.btn-klient {
+.btn {
   display: flex;
   border: 1px solid var(--border-klient-color);
   border-radius: 4px;
   padding: 16px 32px;
-  background-color: var(--button-portfolio-fill);
+  background-color: var(--background-portfolio-color);
   color: var(--black-color);
   cursor: pointer;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  margin-right: 30px;
 }
-.btn-klient:not(:last-child) {
-  margin-left: 30px;
+
+.communication {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  fill: var(--border-klient-color);
+}
+.communication:focus,
+.communication:hover {
+  border: 1px solid black;
+  border-radius: 50%;
+  fill: var(--wite-color);
+}
+.team-imail {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn-klient {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  cursor: pointer;
+  fill: var(--border-klient-color);
+  border: var(--border-klient-color);
+  border-radius: 4px;
+}
+
+.communication-imail {
+  display: flex;
+  width: 106px;
+  height: 60px;
+  fill: var(--border-klient-color);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.communication-imail:focus,
+.communication-imail:hover {
+  fill: var(--brand-color);
 }
