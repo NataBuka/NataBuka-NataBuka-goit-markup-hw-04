@@ -286,6 +286,16 @@ img {
   flex-basis: calc(100%-4 * 30 / 4);
 }
 
+.publicity-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--button-portfolio-fill);
+  margin-bottom: 30px;
+}
+
 .publicity-list {
   display: flex;
 
@@ -311,8 +321,8 @@ img {
 }
 
 .publicity-icon {
-  max-width: 70px;
-  max-height: 70px;
+  width: 70px;
+  height: 70px;
 }
 
 .works-images {
@@ -401,7 +411,6 @@ img {
 
 .team-contact {
   display: flex;
-  background-position: 50% 50%;
 }
 
 .team-contact:not(:last-child) {
@@ -563,21 +572,22 @@ img {
   height: 44px;
   cursor: pointer;
   border: 1px solid transparent;
-  fill: currentColor;
+  color: var(--border-klient-color);
+  justify-content: center;
+  align-items: center;
 }
 
 .communication:focus,
 .communication:hover {
-  border: 1px solid black;
+  color: var(--wite-color);
+  background-color: var(--brand-color);
   border-radius: 50%;
-  fill: var(--wite-color);
 }
 .team-imail {
   display: flex;
   width: 20px;
   height: 20px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  fill: currentColor;
 }
 
 .klients-list {
@@ -589,7 +599,6 @@ img {
   cursor: pointer;
   width: 170px;
   height: 92;
-  border: 1px solid var(--border-klient-color);
   border-radius: 4px;
 }
 
