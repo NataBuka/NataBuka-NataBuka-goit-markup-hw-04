@@ -247,7 +247,7 @@ img {
 }
 
 .background {
-  min-height: 600px;
+  height: 600px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -288,8 +288,16 @@ img {
 
 .publicity-list {
   display: flex;
+
   justify-content: space-between;
 }
+
+.publicity-list .publicity-item {
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+}
+
 .publicity-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -303,8 +311,6 @@ img {
 }
 
 .publicity-icon {
-  display: flex;
-  fill: var(--black-color);
   max-width: 70px;
   max-height: 70px;
 }
@@ -382,6 +388,7 @@ img {
 }
 .team-contacts {
   display: flex;
+  justify-content: center;
 }
 
 .team-text {
@@ -394,6 +401,7 @@ img {
 
 .team-contact {
   display: flex;
+  background-position: 50% 50%;
 }
 
 .team-contact:not(:last-child) {
@@ -428,6 +436,10 @@ img {
 .footer-logo {
   display: block;
   margin-bottom: 20px;
+}
+.footer-imail {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-link-map {
@@ -532,20 +544,28 @@ img {
   border: 1px solid var(--border-klient-color);
   border-radius: 4px;
   padding: 16px 32px;
-  background-color: var(--background-portfolio-color);
   color: var(--black-color);
   cursor: pointer;
   margin-right: 30px;
 }
 
+.btn:hover,
+.btn:focus {
+  border: 1px solid var(--brand-color);
+  color: var(--brand-color);
+}
+
 .communication {
   display: flex;
+  background-position: center;
+  margin: auto auto;
   width: 44px;
   height: 44px;
   cursor: pointer;
   border: 1px solid transparent;
-  fill: var(--border-klient-color);
+  fill: currentColor;
 }
+
 .communication:focus,
 .communication:hover {
   border: 1px solid black;
@@ -560,14 +580,23 @@ img {
   background-size: contain;
 }
 
+.klients-list {
+  display: flex;
+}
+
 .btn-klient {
   display: flex;
-  width: 170px;
-  height: 92px;
   cursor: pointer;
-  fill: var(--border-klient-color);
-  border: var(--border-klient-color);
+  width: 170px;
+  height: 92;
+  border: 1px solid var(--border-klient-color);
   border-radius: 4px;
+}
+
+.btn-klient:hover,
+.btn-klient:focus {
+  color: var(--brand-color);
+  border-color: var(--brand-color);
 }
 
 .communication-imail {
@@ -582,4 +611,8 @@ img {
 .communication-imail:focus,
 .communication-imail:hover {
   fill: var(--brand-color);
+}
+
+.relations {
+  display: flex;
 }
