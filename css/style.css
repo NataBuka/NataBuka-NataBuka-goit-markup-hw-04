@@ -365,7 +365,6 @@ img {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
 }
 
 .team-images {
@@ -373,7 +372,6 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--wite-color);
-  margin-right: 30px;
   flex-basis: calc(100%-4 * 30px) / 4;
 }
 
@@ -447,7 +445,6 @@ img {
 
 .klients-list {
   display: flex;
-  margin-left: -30px;
 }
 .btn {
   width: 170px;
@@ -474,10 +471,6 @@ img {
   border: 1px solid var(--brand-color);
   color: var(--brand-color);
 }
-/*.btn-klient .communication-imail:hover,
-.btn-klient .communication-imail:focus {
-  fill: #2196f3;
-}*/
 
 .communication-imail {
   display: flex;
@@ -526,6 +519,16 @@ img {
 }
 .footer-relations {
   margin-right: 70px;
+}
+
+.footer-headline {
+  color: var(--wite-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .footer-imail-li:not(:last-child) {
