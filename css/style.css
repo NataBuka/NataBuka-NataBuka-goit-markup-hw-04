@@ -368,13 +368,6 @@ img {
   margin-left: -30px;
 }
 
-.team-images:not(:nth-child(4n)) {
-  margin-right: 30px;
-}
-.team-images:not(:nth-last-child(-n + 4)) {
-  margin-bottom: 30px;
-}
-
 .team-images {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -387,15 +380,17 @@ img {
 .team-img {
   margin-top: 0px;
 }
-.team-imail {
-  display: flex;
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
+
 .team-imagest-text {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.team-images:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+.team-images:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 30px;
 }
 
 .team-item {
@@ -434,7 +429,12 @@ img {
   justify-content: center;
   align-items: center;
 }
-
+.team-imail {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
 .communication:focus,
 .communication:hover {
   color: var(--wite-color);
@@ -454,19 +454,6 @@ img {
   height: 92px;
 }
 
-.btn:not(:last-child) {
-  margin-right: 30px;
-}
-
-.btn-klient:hover,
-.btn-klient:focus {
-  border: 1px solid var(--brand-color);
-  fill: var(--brand-color);
-}
-.btn-klient .communication-imail:hover,
-.btn-klient .communication-imail:focus {
-  fill: var(--brand-color);
-}
 .btn-klient {
   padding: 16px 32px;
   display: flex;
@@ -477,11 +464,26 @@ img {
   background-position: center;
   color: var(--border-klient-color);
 }
+
+.btn:not(:last-child) {
+  margin-right: 30px;
+}
+
+.btn-klient:hover,
+.btn-klient:focus {
+  border: 1px solid var(--brand-color);
+  color: var(--brand-color);
+}
+/*.btn-klient .communication-imail:hover,
+.btn-klient .communication-imail:focus {
+  fill: #2196f3;
+}*/
+
 .communication-imail {
   display: flex;
   width: 106px;
   height: 60px;
-  fill: var(--border-klient-color);
+  fill: currentColor;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -602,12 +604,6 @@ img {
   border-right: 1px solid var(--border-line-img);
 }
 
-.filter-img > .filter-item:hover,
-.filter-img > .filter-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .filter-img {
   display: flex;
   flex-wrap: wrap;
@@ -661,6 +657,11 @@ img {
   background-color: var(--wite-color);
 }
 
-.fit-imail {
+.flt-imail {
   display: block;
+}
+.filter-item .flt-imail:hover,
+.filter-item .flt-imail:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
